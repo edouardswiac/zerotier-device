@@ -11,7 +11,7 @@
     <groupId>com.github.edouardswiac</groupId>
     <artifactId>ztdevice</artifactId>
     <version>1.0.0</version>
-    <name>zerotier-device</name>
+    <name>${project.groupId}:${project.artifactId}</name>
     <description>A java wrapper for zerotier-cli.</description>
     <url>https://github.com/edouardswiac/zerotier-device</url>
 
@@ -29,8 +29,8 @@
     </licenses>
 
     <scm>
-        <url>https://github.com/edouardswiac/zerotier-device</url>
-        <connection>scm:git:git://github.com/edouardswiac/zerotier-device</connection>
+        <url>scm:git:git@github.com:edouardswiac/zerotier-device.git</url>
+        <connection>scm:git:git@github.com:edouardswiac/zerotier-device.git</connection>
         <developerConnection>scm:git:git@github.com:edouardswiac/zerotier-device</developerConnection>
     </scm>
 
@@ -78,6 +78,19 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 
@@ -101,4 +114,25 @@
         </dependency>
 
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>sonatype-nexus-snapshots</id>
+            <name>Sonatype Nexus Snapshots</name>
+            <url>http://oss.sonatype.org/content/repositories/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus-site</id>
+            <url>http://central_nexus/server</url>
+        </repository>
+    </distributionManagement>
 </project>
