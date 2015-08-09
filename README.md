@@ -5,7 +5,7 @@ It implements join/leave network and info. It supports only unix/linux systems a
 
 ## Installation
 
-zt-device is hosted in maven central.
+See releases. The artifact will be pushed to maven central soon.
 
 ## Usage
 
@@ -15,6 +15,7 @@ ZeroTierCli cli = device.getZeroTierCli(); // see platform implementations in cl
 cli.join("3d73jdhad");
 cli.info();
 cli.leave("3d73jdhad");
+```
 
 ## Testing
 
