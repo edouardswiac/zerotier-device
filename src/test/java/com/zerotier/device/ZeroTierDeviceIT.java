@@ -13,6 +13,7 @@ public class ZeroTierDeviceIT {
         ZeroTierDevice device = new ZeroTierDevice();
         assertEquals(true, device.join(testingNetwork));
         String info = device.info();
+        System.out.print(info);
         assertTrue(info.contains("200"));
         assertEquals(true, device.leave(testingNetwork));
     }
