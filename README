@@ -16,6 +16,11 @@ cli.join("3d73jdhad");
 cli.info();
 cli.leave("3d73jdhad");
 
+## Testing
+
+There is one integration test (ZeroTierDeviceIT) that should pass if zerotier-cli is installed on your Unix/Linux machine.
+Run the test with `mvn verify`
+
 ## Contributing
 
 1. Fork it!
