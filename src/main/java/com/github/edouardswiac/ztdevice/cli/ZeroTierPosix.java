@@ -10,7 +10,7 @@ import java.io.IOException;
 public class ZeroTierPosix implements ZeroTierCli {
     private final Logger logger = LoggerFactory.getLogger(ZeroTierPosix.class);
 
-    public ZeroTierPosix() {
+    public ZeroTierPosix() throws ZeroTierNotInstalledException {
         try {
             Process p = new ProcessBuilder("command -v zerotier-cli".split(" ")).start();
             int retCode = p.waitFor();

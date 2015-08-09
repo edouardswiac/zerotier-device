@@ -14,7 +14,7 @@ public class ZeroTierDevice {
         logger.info("OS: %s (%s) version %s", SystemUtils.OS_NAME, SystemUtils.OS_ARCH, SystemUtils.OS_VERSION);
     }
 
-    public ZeroTierCli getZeroTierCli() {
+    public ZeroTierCli getZeroTierCli() throws UnsupportedOSException, ZeroTierNotInstalledException {
         if (SystemUtils.IS_OS_UNIX || SystemUtils.IS_OS_LINUX) {
             return new ZeroTierPosix();
         } else {

@@ -1,7 +1,7 @@
 package com.github.edouardswiac.ztdevice;
 
 
-public class ZeroTierNotInstalledException extends RuntimeException {
+public class ZeroTierNotInstalledException extends Exception {
     public ZeroTierNotInstalledException() {
         super();
     }

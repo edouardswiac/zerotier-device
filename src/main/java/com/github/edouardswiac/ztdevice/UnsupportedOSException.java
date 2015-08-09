@@ -1,4 +1,4 @@
 package com.github.edouardswiac.ztdevice;
 
 
-public class UnsupportedOSException extends RuntimeException { }
+public class UnsupportedOSException extends Exception { }
