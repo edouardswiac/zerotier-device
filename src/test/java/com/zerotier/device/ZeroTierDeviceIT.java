@@ -3,6 +3,7 @@ package com.zerotier.device;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+import com.zerotier.device.cli.ZeroTierCli;
 import org.junit.Test;
 
 public class ZeroTierDeviceIT {
@@ -11,10 +12,11 @@ public class ZeroTierDeviceIT {
     @Test
     public void checkZeroTier() {
         ZeroTierDevice device = new ZeroTierDevice();
-        assertEquals(true, device.join(testingNetwork));
-        String info = device.info();
+        ZeroTierCli cli = device.getZeroTierCli();
+        assertEquals(true, cli.join(testingNetwork));
+        String info = cli.info();
         System.out.print(info);
         assertTrue(info.contains("200"));
-        assertEquals(true, device.leave(testingNetwork));
+        assertEquals(true, cli.leave(testingNetwork));
     }
 }
