@@ -18,7 +18,7 @@ public class ZeroTierDevice {
         if (SystemUtils.IS_OS_UNIX || SystemUtils.IS_OS_LINUX) {
             return new ZeroTierPosix();
         } else {
-            throw new UnknownOSException();
+            throw new UnsupportedOSException();
         }
     }
 
