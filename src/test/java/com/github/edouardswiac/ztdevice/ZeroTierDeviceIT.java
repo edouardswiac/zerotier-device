@@ -1,9 +1,9 @@
-package com.zerotier.device;
+package com.github.edouardswiac.ztdevice;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-import com.zerotier.device.cli.ZeroTierCli;
+import com.github.edouardswiac.ztdevice.cli.ZeroTierCli;
 import org.junit.Test;
 
 public class ZeroTierDeviceIT {

@@ -1,4 +1,4 @@
-package com.zerotier.device;
+package com.github.edouardswiac.ztdevice;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -8,10 +8,40 @@
         <maven>3.0.1</maven>
     </prerequisites>
 
-    <groupId>com.zerotier</groupId>
-    <artifactId>device</artifactId>
+    <groupId>com.github.edouardswiac</groupId>
+    <artifactId>ztdevice</artifactId>
     <version>1.0.0</version>
-    <name>ZeroTier Device</name>
+    <name>zerotier-device</name>
+    <description>A java wrapper for zerotier-cli.</description>
+    <url>https://github.com/edouardswiac/zerotier-device</url>
+
+    <issueManagement>
+        <url>https://github.com/edouardswiac/zerotier-cli/issues</url>
+        <system>GitHub Issues</system>
+    </issueManagement>
+
+    <licenses>
+        <license>
+            <name>GPL License</name>
+            <url>http://opensource.org/licenses/GPL-3.0</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://github.com/edouardswiac/zerotier-device</url>
+        <connection>scm:git:git://github.com/edouardswiac/zerotier-device</connection>
+        <developerConnection>scm:git:git@github.com:edouardswiac/zerotier-device</developerConnection>
+    </scm>
+
+    <developers>
+        <developer>
+            <email>edouard.swiac@gmail.com</email>
+            <name>Edouard Swiac</name>
+            <url>https://github.com/edouardswiac</url>
+            <id>edouardswiac</id>
+        </developer>
+    </developers>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

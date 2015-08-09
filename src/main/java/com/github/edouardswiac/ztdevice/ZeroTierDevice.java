@@ -1,7 +1,7 @@
-package com.zerotier.device;
+package com.github.edouardswiac.ztdevice;
 
-import com.zerotier.device.cli.ZeroTierCli;
-import com.zerotier.device.cli.ZeroTierPosix;
+import com.github.edouardswiac.ztdevice.cli.ZeroTierCli;
+import com.github.edouardswiac.ztdevice.cli.ZeroTierPosix;
 import org.apache.commons.lang3.SystemUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

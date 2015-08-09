@@ -1,4 +1,4 @@
-package com.zerotier.device.cli;
+package com.github.edouardswiac.ztdevice.cli;
 
 /**
  * Created by eswiac on 8/8/15.

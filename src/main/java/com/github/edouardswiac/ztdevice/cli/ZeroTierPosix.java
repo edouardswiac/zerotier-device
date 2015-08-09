@@ -1,15 +1,10 @@
-package com.zerotier.device.cli;
+package com.github.edouardswiac.ztdevice.cli;
 
-import com.zerotier.device.ZeroTierNotInstalledException;
+import com.github.edouardswiac.ztdevice.ZeroTierNotInstalledException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.DataInputStream;
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.List;
 
 
 public class ZeroTierPosix implements ZeroTierCli {
