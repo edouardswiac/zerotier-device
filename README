@@ -1,14 +1,20 @@
-# zerotier-device
+# zerotier-device [![Build Status](https://travis-ci.org/edouardswiac/zerotier-device.svg?branch=master)](https://travis-ci.org/edouardswiac/zerotier-device)
 
-A java wrapper of zerotier-cli. It implements join/leave network and info.
+A java wrapper for zerotier-cli (https://www.zerotier.com/).
+It implements join/leave network and info. It supports only unix/linux systems at the moment. A Windows implementation will follow.
 
 ## Installation
 
-
+zt-device is hosted in maven central.
 
 ## Usage
 
-TODO: Write usage instructions
+```java
+ZeroTierDevice device = new ZeroTierDevice();
+ZeroTierCli cli = device.getZeroTierCli(); // see platform implementations in cli package
+cli.join("3d73jdhad");
+cli.info();
+cli.leave("3d73jdhad");
 
 ## Contributing
 
@@ -20,12 +26,12 @@ TODO: Write usage instructions
 
 ## History
 
-TODO: Write history
+1.0.0 Initial release. Unix/Linux support
 
 ## Credits
 
-TODO: Write credits
+Edouard Swiac <edouard.swiac@gmail.com>
 
 ## License
 
-TODO: Write license
+GPL
